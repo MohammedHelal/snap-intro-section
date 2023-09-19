@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Snap intro github repo](https://github.com/MohammedHelal/snap-intro-section)
+- Live Site URL: [Snap intro site](https://mohammedhelal.github.io/snap-intro-section/)
 
 ## My process
 
