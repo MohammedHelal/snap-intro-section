@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Garamond, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 18px;
+
+  --color-almost-white: hsl(0, 0%, 98%);
+  --color-medium-gray: hsl(0, 0%, 41%);
+  --color-almost-black: hsl(0, 0%, 8%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-almost-white);
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.25em;
+}

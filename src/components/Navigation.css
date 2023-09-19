@@ -1,0 +1,171 @@
+nav {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+nav:last-of-type {
+  display: none;
+}
+
+.logo {
+  margin: 18px;
+  padding-top: 10px;
+}
+
+#open {
+  margin: 0 40px;
+  cursor: pointer;
+}
+
+.close-btn {
+  display: none;
+}
+
+.mobile-open,
+.mobile-close {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.nav-link {
+  padding: 0 10px;
+  color: var(--color-medium-gray);
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--color-almost-black);
+}
+
+.flex-right {
+  margin-left: auto;
+}
+
+.register {
+  border: 2px solid var(--color-medium-gray);
+  border-radius: 15px;
+  padding: 7px 20px;
+}
+
+.register:hover {
+  border-color: var(--color-almost-black);
+}
+
+.dropdown-head {
+  position: relative;
+}
+
+.dropdown-head:hover::after {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(0%)
+    contrast(100%);
+}
+
+.dropdown-head::after {
+  content: url("../images/icon-arrow-down.svg");
+  margin-left: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  list-style: none;
+  top: 55px;
+  min-width: 120px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 10px 10px 5px lightgray;
+  color: var(--color-medium-gray);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s, height 0.5s, padding 0.5s linear;
+}
+
+#features-dropdown {
+  left: 120px;
+}
+
+#company-dropdown {
+  left: 300px;
+}
+
+.dropdown-menu > li {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu > li:hover {
+  color: var(--color-almost-black);
+  cursor: pointer;
+}
+
+.dropdown-menu > li > img {
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 680px) {
+  nav:last-of-type {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: none;
+    margin-top: 0;
+    position: absolute;
+    padding: 0 15px;
+    top: 0px;
+    right: 0;
+    width: 65vw;
+    height: 150vh;
+    background-color: white;
+    z-index: 1000;
+  }
+
+  .mobile-close {
+    display: none;
+  }
+
+  .mobile-open {
+    display: block;
+  }
+
+  nav:first-of-type > img {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    font-size: 1em;
+  }
+
+  .flex-right,
+  .register {
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    height: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .close-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+  }
+}

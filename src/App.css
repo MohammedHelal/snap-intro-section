@@ -1,0 +1,124 @@
+main {
+  margin: 20px 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10vw;
+}
+
+.right-main-side {
+  height: 80vh;
+  margin: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.right-main-side > div > h1 {
+  font-size: 5em;
+  line-height: 0.8;
+  margin: 10px 0 30px;
+  margin-right: 25px;
+}
+
+.right-main-side > div > p {
+  font-size: 1.25em;
+  line-height: 1.2;
+  color: var(--color-medium-gray);
+  margin: 3cqh 0;
+  margin-right: 25px;
+}
+
+#learn-more {
+  margin: 30px 0;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 0;
+  background-color: var(--color-almost-black);
+  color: var(--color-almost-white);
+  cursor: pointer;
+  font-weight: 600;
+}
+#learn-more:active {
+  background-color: var(--color-almost-white);
+  color: var(--color-almost-black);
+  border: 1px solid var(--color-almost-black);
+}
+
+.icons-flex {
+  justify-self: end;
+  display: flex;
+  align-items: flex-end;
+}
+
+.icons-flex > img {
+  margin-bottom: 10px;
+  padding-right: 40px;
+}
+
+.left-image {
+  height: 80vh;
+}
+
+@media screen and (max-width: 680px) {
+  #overlay {
+    display: none;
+    height: 150vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 100;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .right-main-side {
+    width: 100vw;
+    margin: 0px;
+    padding: 10px;
+    height: auto;
+    order: 2;
+  }
+
+  .right-main-side > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-main-side > div > h1 {
+    font-size: 2.3em;
+    font-weight: 900;
+  }
+
+  .right-main-side > div > h1,
+  .right-main-side > div > p {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .icons-flex {
+    margin: 20px 0;
+  }
+
+  .icons-flex > img {
+    margin-bottom: 0;
+    padding: 0 10px;
+    width: 24vw;
+  }
+
+  .left-image {
+    margin: 0;
+    content: url("../images/image-hero-mobile.png");
+    width: 100vw;
+    height: auto;
+  }
+}
