@@ -24,20 +24,22 @@ function MainNav({
           alt="Arrow for drop down"
         />
       </li>
-      <ul id="features-dropdown" className="dropdown-menu">
-        <li>
-          <img src="./images/icon-todo.svg" alt="" /> Todo List
-        </li>
-        <li>
-          <img src="./images/icon-calendar.svg" alt="" /> Calendar
-        </li>
-        <li>
-          <img src="./images/icon-reminders.svg" alt="" /> Reminders
-        </li>
-        <li>
-          <img src="./images/icon-planning.svg" alt="" /> Planning
-        </li>
-      </ul>
+      <li>
+        <ul id="features-dropdown" className="dropdown-menu">
+          <li>
+            <img src="./images/icon-todo.svg" alt="" /> Todo List
+          </li>
+          <li>
+            <img src="./images/icon-calendar.svg" alt="" /> Calendar
+          </li>
+          <li>
+            <img src="./images/icon-reminders.svg" alt="" /> Reminders
+          </li>
+          <li>
+            <img src="./images/icon-planning.svg" alt="" /> Planning
+          </li>
+        </ul>
+      </li>
       <li id="company" className="dropdown-head nav-link" onClick={onClick}>
         Company{" "}
         <img
@@ -49,11 +51,13 @@ function MainNav({
           alt="Arrow for drop down"
         />
       </li>
-      <ul id="company-dropdown" className="dropdown-menu">
-        <li>History</li>
-        <li>Our Team</li>
-        <li>Blog</li>
-      </ul>
+      <li>
+        <ul id="company-dropdown" className="dropdown-menu">
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </li>
       <li className="nav-link">Careers</li>
       <li className="nav-link">About</li>
       <li className="nav-link flex-right">Login</li>
