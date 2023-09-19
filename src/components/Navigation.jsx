@@ -3,7 +3,13 @@ import MobileNav from "./MobileNav";
 import PropTypes from "prop-types";
 import "./Navigation.css";
 
-function Navigation({ onClick, mobileclasses, handleSideNav }) {
+function Navigation({
+  onClick,
+  mobileclasses,
+  handleSideNav,
+  featuresDD,
+  companyDD,
+}) {
   return (
     <header>
       <nav>
@@ -12,6 +18,8 @@ function Navigation({ onClick, mobileclasses, handleSideNav }) {
           mobileclasses={mobileclasses}
           handleSideNav={handleSideNav}
           onClick={onClick}
+          featuresDD={featuresDD}
+          companyDD={companyDD}
         />
       </nav>
       <MobileNav handleSideNav={handleSideNav} />
@@ -24,6 +32,8 @@ Navigation.propTypes = {
   overlayDisplay: PropTypes.func,
   mobileclasses: PropTypes.string,
   handleSideNav: PropTypes.func,
+  featuresDD: PropTypes.bool,
+  companyDD: PropTypes.bool,
 };
 
 export default Navigation;

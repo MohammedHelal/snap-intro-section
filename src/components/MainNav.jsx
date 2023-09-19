@@ -1,6 +1,12 @@
 import PropTypes from "prop-types";
 
-function MainNav({ mobileclasses, handleSideNav, onClick }) {
+function MainNav({
+  mobileclasses,
+  handleSideNav,
+  onClick,
+  featuresDD,
+  companyDD,
+}) {
   return (
     <ul id="main-nav" className={"nav-list " + mobileclasses}>
       {/*the close button for the side nav on the mobile display, the button is only visible on mobile display*/}
@@ -8,7 +14,15 @@ function MainNav({ mobileclasses, handleSideNav, onClick }) {
         <img src="./images/icon-close-menu.svg" alt="sidebar close" />{" "}
       </li>
       <li id="features" className="dropdown-head nav-link" onClick={onClick}>
-        Features
+        Features{" "}
+        <img
+          src={
+            featuresDD
+              ? "./images/icon-arrow-up.svg"
+              : "./images/icon-arrow-down.svg"
+          }
+          alt="Arrow for drop down"
+        />
       </li>
       <ul id="features-dropdown" className="dropdown-menu">
         <li>
@@ -25,7 +39,15 @@ function MainNav({ mobileclasses, handleSideNav, onClick }) {
         </li>
       </ul>
       <li id="company" className="dropdown-head nav-link" onClick={onClick}>
-        Company
+        Company{" "}
+        <img
+          src={
+            companyDD
+              ? "./images/icon-arrow-up.svg"
+              : "./images/icon-arrow-down.svg"
+          }
+          alt="Arrow for drop down"
+        />
       </li>
       <ul id="company-dropdown" className="dropdown-menu">
         <li>History</li>
@@ -44,6 +66,8 @@ MainNav.propTypes = {
   mobileclasses: PropTypes.string,
   handleSideNav: PropTypes.func,
   onClick: PropTypes.func,
+  featuresDD: PropTypes.bool,
+  companyDD: PropTypes.bool,
 };
 
 export default MainNav;

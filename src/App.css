@@ -65,7 +65,6 @@ main {
 @media screen and (max-width: 680px) {
   #overlay {
     display: none;
-    height: 150vh;
     position: absolute;
     top: 0;
     bottom: 0;

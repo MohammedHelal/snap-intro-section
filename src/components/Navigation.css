@@ -64,14 +64,9 @@ nav:last-of-type {
   position: relative;
 }
 
-.dropdown-head:hover::after {
+.dropdown-head:hover > img {
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(0%)
     contrast(100%);
-}
-
-.dropdown-head::after {
-  content: url("../images/icon-arrow-down.svg");
-  margin-left: 10px;
 }
 
 .dropdown-menu {
@@ -116,17 +111,20 @@ nav:last-of-type {
   nav:last-of-type {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   .nav-list {
     display: none;
     margin-top: 0;
+    margin-bottom: 0;
     position: absolute;
     padding: 0 15px;
-    top: 0px;
+    top: 0;
+    bottom: 0;
     right: 0;
     width: 65vw;
-    height: 150vh;
+    max-width: 300px;
     background-color: white;
     z-index: 1000;
   }

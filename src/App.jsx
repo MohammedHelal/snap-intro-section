@@ -76,6 +76,8 @@ function App() {
         onClick={clickHandler}
         mobileclasses={mobileclasses}
         handleSideNav={handleSideNav}
+        featuresDD={featuresDropdown}
+        companyDD={companyDropdown}
       />
       <main onClick={hideDropdown}>
         <section className="right-main-side">
