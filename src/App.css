@@ -17,29 +17,31 @@ main {
 }
 
 .right-main-side > div > h1 {
-  font-size: 5em;
-  line-height: 0.8;
+  font-size: 4em;
+  line-height: 1;
   margin: 10px 0 30px;
   margin-right: 25px;
+  font-weight: 700;
 }
 
 .right-main-side > div > p {
   font-size: 1.25em;
-  line-height: 1.2;
+  line-height: 1.5;
   color: var(--color-medium-gray);
-  margin: 3cqh 0;
+  margin: 30px 0;
   margin-right: 25px;
 }
 
 #learn-more {
   margin: 30px 0;
-  padding: 15px 30px;
+  padding: 20px 40px;
   border-radius: 10px;
   border: 0;
   background-color: var(--color-almost-black);
   color: var(--color-almost-white);
   cursor: pointer;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
 }
 #learn-more:active {
   background-color: var(--color-almost-white);
@@ -102,6 +104,10 @@ main {
   .right-main-side > div > p {
     text-align: center;
     margin-right: 0;
+  }
+
+  .right-main-side > div > p {
+    font-size: 1em;
   }
 
   .icons-flex {
